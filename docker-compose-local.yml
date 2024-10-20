@@ -1,0 +1,12 @@
+version: "3.1"
+
+services:
+  server-backend:
+    build: ./server-backend
+    environment:
+      - API_ENDPOINT=
+      - API_LOGIN=
+      - API_PASSWORD=
+      - USERS_JSON=./users.json
+    ports:
+      - "8081:80"
